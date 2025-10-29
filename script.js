@@ -1,5 +1,5 @@
 const getNews = () => {
-    const userInput = document.getElementById('userInput').value.toLowerCase();
+    let userInput = document.getElementById('userInput').value.toLowerCase();
     if (userInput === 'news') {
         fetch('https://api.rss2json.com/v1/api.json?rss_url=https://feeds.feedburner.com/ndtvnews-top-stories&api_key=kgxodxyobikxzffocnnnbptw8ny5ky6e0px2ujbq')
             .then(response => response.json())
